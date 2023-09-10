@@ -26,7 +26,7 @@ const Movie = () =>{
     }, [])
 
     const formatCurrancy = (value) =>{
-        return value.toLocaleString("en-US", {
+        return value.toLocaleString("pt-Br", {
             style: "currency",
             currency: "USD",
         })
@@ -39,31 +39,37 @@ const Movie = () =>{
         <div className="movie-info">
             {movie && (
                 <>
-                    <MovieCard movie={movie} showlink={false} />
-                    <p className="movie-info__tagline">{movie.tagline}</p>
-                    <div className="info">
-                        <h3>
-                            <BsWallet2/> Orçamento
-                        </h3>    
-                        <p>{formatCurrancy(movie.budget)}</p>
+                    <div className="movie-info__card">
+                        <MovieCard movie={movie} showlink={false} />
                     </div>
-                    <div className="info">
-                        <h3>
-                            <BsGraphUp/> Faturamento
-                        </h3>    
-                        <p>{formatCurrancy(movie.revenue)}</p>
-                    </div>
-                    <div className="info">
-                        <h3>
-                            <BsHourglassSplit/> Duração
-                        </h3>    
-                        <p>{movie.runtime} minutos</p>
-                    </div>
-                    <div className="info">
-                        <h3>
-                            <BsFillFileEarmarkTextFill/> Descrição
-                        </h3>    
-                        <p>{movie.overview}</p>
+                    <div className="movie-info__infos">
+                        <h2 className="movie-info__title">{movie.title}</h2>{movie.release_date}
+                        <p className="movie-info__tagline">{movie.tagline}</p>
+                        <div className="info">
+                            <h3 className="info__titulo">
+                                <BsWallet2/> Orçamento
+                            </h3>    
+                            <p>{formatCurrancy(movie.budget)}</p>
+                        </div>
+                        <div className="info">
+                            <h3 className="info__titulo">
+                                <BsGraphUp/> Faturamento
+                            </h3>    
+                            <p className="info__descricao">{formatCurrancy(movie.revenue)}</p>
+                        </div>
+                        <div className="info">
+                            <h3 className="info__titulo">
+                                <BsHourglassSplit/> Duração
+                            </h3>    
+                            <p className="info__descricao" >{movie.runtime} minutos</p>
+                        </div>
+                        <div className="info">
+                            <h3 className="info__titulo">
+                                <BsFillFileEarmarkTextFill/> Descrição
+                            </h3>    
+                            <p className="info__descricao">{movie.overview}</p>
+                        </div>
+                        
                     </div>
                     
                 </>

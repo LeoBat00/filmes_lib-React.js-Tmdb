@@ -1,0 +1,31 @@
+.movie-card{
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
+    background-color: #181818;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 0 0.5em 2em 0.5em;
+}
+
+.movie-card__imagem{
+    max-width: 100%;
+}
+
+
+.movie-card p svg{
+    color: #9a9be6;
+}
+
+.movie-card__botao{
+    background-color: #9a9be6;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: #181818;
+    font-size: 1em;
+}

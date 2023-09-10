@@ -1,0 +1,23 @@
+.container{
+    
+}
+.container__titulo{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2em 0 1em;
+}
+
+.container__titulo .query-text{
+    color: #9a9be6;
+}
+.container__movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    max-width: 1980px;
+    margin: 0 auto;
+
+} 
+

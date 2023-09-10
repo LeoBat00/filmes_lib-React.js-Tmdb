@@ -1,0 +1,23 @@
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 1em auto;
+    gap: 1em;
+    background-color: #000000;
+}
+
+.movie-info svg{
+    font-size: 1.5rem;
+    color: #9a9be6;
+} 
+
+.movie-info .movie-card{
+    text-align: center;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.movie-info .movie-card{
+
+}

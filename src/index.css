@@ -6,7 +6,9 @@
 }
 
 body{
-  background-color: #121212;
+  background-image: url(/IMG/Background.svg);
+  background-color: #94999c;
+  background-repeat: no-repeat;
   color:white;
 }
 

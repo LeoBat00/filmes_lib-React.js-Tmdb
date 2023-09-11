@@ -1,9 +1,11 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 1em 7em;
     background-color: rgb(3, 3, 3);
     align-items: center;
+    width: 100%;
+    
 }
 
 .navbar__titulo__link{
@@ -12,6 +14,21 @@
     gap: 0.5em;
     color: #9a9be6;
 }
+
+.navbar p{
+    font-weight: 300;
+    color: rgb(232, 232, 232);
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.navbar p .navbar__paragrafo-destaque{
+    color: #7875FF;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ffffff;
+}
+
 .navbar__form{
     display: flex;
     align-items: center;

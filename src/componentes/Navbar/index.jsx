@@ -18,9 +18,12 @@ const Navbar = () =>{
         <nav className="navbar" id='navbar'>
             <h2 className='navbar__titulo'>
                 <Link to="/" className='navbar__titulo__link'>
-                    <BiSolidCameraMovie />MoviesLib
+                    <img src="/IMG/LogoMoviesLib.svg"/>
                 </Link>
             </h2>
+
+            <p>Study Project - <stroke className="navbar__paragrafo-destaque">LeoBat00</stroke></p>
+
             <form onSubmit={handleSubmit} className='navbar__form'>
                 <input className='navbar__form__search' type="search" placeholder="Busque um filme" 
                     onChange={(evento) =>

@@ -17,16 +17,21 @@
 
 .navbar p{
     font-weight: 300;
-    color: rgb(232, 232, 232);
+    color: rgba(232, 232, 232, 0.635);
     font-weight: lighter;
     font-size: 1rem;
 }
 
 .navbar p .navbar__paragrafo-destaque{
-    color: #7875FF;
+    font-size: 1.2em;
     font-weight: bold;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+.navbar p .navbar__paragrafo-destaque:hover{
+
+    color: #9a9be6;
+    font-weight: bold;
+    border-bottom: 1px solid #9a9be6;
 }
 
 .navbar__form{

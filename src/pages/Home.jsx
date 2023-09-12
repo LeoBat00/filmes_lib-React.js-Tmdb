@@ -3,8 +3,7 @@ import MovieCard from '../componentes/MovieCard';
 import './MovieGrid.css'
 const moviesUrl = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
-import { Link, useNavigate } from 'react-router-dom'
-import {BiSearchAlt2} from 'react-icons/bi'
+import {  useNavigate } from 'react-router-dom'
 const Home = () =>{
 
     const [search, setSearch] = useState('')

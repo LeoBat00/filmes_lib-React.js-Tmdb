@@ -6,6 +6,8 @@ const imageUrl = import.meta.env.VITE_IMG;
 console.log(imageUrl)
 const MovieCard = ({ movie, showlink=true }) => {
     
+    let movieVoteFixed = movie.vote_average.toFixed(1)
+
     return (
         <div className="movie-card">
 
@@ -15,7 +17,7 @@ const MovieCard = ({ movie, showlink=true }) => {
                  <img className='movie-card__imagem'src={imageUrl + movie.poster_path} alt={movie.title}/>
                  <div className="movie-card__avarage">
                     <p>
-                        {movie.vote_average}
+                        {movieVoteFixed}
                     </p>  
                  </div>
                  
@@ -26,7 +28,7 @@ const MovieCard = ({ movie, showlink=true }) => {
                 <>
                     <img className='movie-card__imagem'src={imageUrl + movie.poster_path} alt={movie.title}/>
                     <p className=".movie-card__avarage">
-                        <FaStar className=".movie-card__star" /> {movie.vote_average}
+                        <FaStar className=".movie-card__star" /> {movieVoteFixed}
                     </p>  
                 </>
             )}

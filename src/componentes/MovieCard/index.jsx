@@ -27,9 +27,11 @@ const MovieCard = ({ movie, showlink=true }) => {
             {!showlink && (
                 <>
                     <img className='movie-card__imagem'src={imageUrl + movie.poster_path} alt={movie.title}/>
-                    <p className=".movie-card__avarage">
-                        <FaStar className=".movie-card__star" /> {movieVoteFixed}
+                    <div className="movie-card__avarage">
+                    <p>
+                        {movieVoteFixed}
                     </p>  
+                 </div>
                 </>
             )}
  

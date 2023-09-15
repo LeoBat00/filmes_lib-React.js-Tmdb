@@ -1,6 +1,6 @@
 import {  useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import {BsGraphUp, BsWallet2, BsHourglassSplit, BsFillFileEarmarkTextFill, Bs3Circle, BsWallet} from 'react-icons/bs'
+import {BsGraphUp, BsWallet2, BsHourglassSplit, BsFillFileEarmarkTextFill} from 'react-icons/bs'
 
 import './Movie.css'
 
@@ -34,7 +34,10 @@ const Movie = () =>{
     }
 
 
-
+    function formateData (data) {
+        let dataFormated = data.split("-");
+        return (" ("+dataFormated[0]+")");
+    }
     return(
         <div className="movie-info">
             {movie && (
@@ -43,7 +46,7 @@ const Movie = () =>{
                         <MovieCard movie={movie} showlink={false} />
                     </div>
                     <div className="movie-info__infos">
-                        <h2 className="movie-info__title">{movie.title}</h2>{movie.release_date}
+                        <h2 className="movie-info__title">{movie.title}<span className="movie-info__data">{formateData(movie.release_date)}</span></h2>
                         <p className="movie-info__tagline">{movie.tagline}</p>
                         <div className="info">
                             <h3 className="info__titulo">

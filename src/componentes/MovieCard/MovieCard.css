@@ -35,6 +35,7 @@
     top: 93%;
     z-index: 2;
     right: 45%;
+    font-weight: 300;
 
 }
 .movie-card__avarage::before {
@@ -54,7 +55,7 @@
 .movie-card p{
     z-index: 2;
     color: #9F9DF9;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .movie-card__botao{

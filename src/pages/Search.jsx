@@ -52,7 +52,7 @@ const Search = () =>{
                     <button className='pesquisa__search-button' type="submit"></button>
                 </form>           
              </section>
-             <section class="movies">
+             <section className="movies">
                 <h2 className='container__titulo'>Resultados para: <span className="query-text">{query}</span></h2>
                 <div className='container__movies'>
                     {movies.length === 0 && <p>Carregando...</p>}

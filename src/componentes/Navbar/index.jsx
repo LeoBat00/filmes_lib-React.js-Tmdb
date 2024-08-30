@@ -11,7 +11,7 @@ const Navbar = () =>{
                 </Link>
             </h2>
 
-            <p>Study Project - <a href="https://github.com/LeoBat00" className="navbar__paragrafo-destaque">LeoBat00</a></p>
+            <p className='myinfo'>Study Project - <a href="https://github.com/LeoBat00" className="navbar__paragrafo-destaque">LeoBat00</a></p>
 
         
       </nav>

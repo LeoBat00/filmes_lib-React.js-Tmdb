@@ -1,5 +1,5 @@
 .movie-card{
-    width: 18%;
+    max-width: 300px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -67,3 +67,10 @@
     color: #181818;
     font-size: 0.8rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .container__movies {
+        display: flex;
+        flex-direction: column;
+    }
+  }

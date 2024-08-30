@@ -70,3 +70,18 @@
     color: #9a9be6;
     border-color: #9a9be6;
 }
+
+@media only screen and (max-width: 650px) {
+    .myinfo{
+        display: none;
+    }
+    .navbar{
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar__titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

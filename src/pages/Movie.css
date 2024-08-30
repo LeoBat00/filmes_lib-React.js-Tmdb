@@ -60,3 +60,14 @@
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
 } 
+
+@media only screen and (max-width: 820px) {
+    .movie-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .movie-info__infos{
+        width: 100%;
+        
+    }
+}
